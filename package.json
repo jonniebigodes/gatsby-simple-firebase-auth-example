@@ -13,9 +13,12 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "firebase": "^6.3.5",
     "gatsby": "^2.13.59",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-firebaseui": "^4.0.0",
+    "react-loadable": "^5.5.0"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
