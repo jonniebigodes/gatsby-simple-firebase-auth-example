@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import firebaseui from 'firebaseui'
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 import firebase from "firebase/app"
 import "firebase/auth"
@@ -20,18 +19,6 @@ class SimpleFirebase extends Component {
   state = {
     isSignedIn: false,
   }
-  /* uiConfig = {
-    // Popup signin flow rather than redirect flow.
-    signInFlow: "popup",
-    // We will display Google and Facebook as auth providers.
-    signInOptions: [
-        firebase.auth.EmailAuthProvider.PROVIDER_ID,
-    ],
-    callbacks: {
-      // Avoid redirects after sign-in.
-      signInSuccessWithAuthResult: () => false,
-    },
-  } */
   componentDidMount() {
     this.unregisterAuthObserver = firebase.auth().onAuthStateChanged(user => {
       this.setState({ isSignedIn: !!user })
